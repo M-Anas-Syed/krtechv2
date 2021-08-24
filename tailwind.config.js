@@ -16,6 +16,11 @@ module.exports = {
        'painter-bg': "url('/dist/images/painter.jpg')",
        'plumber-bg': "url('/dist/images/plumber.jpg')",
        'logo': "url('/dist/images/krtechlogo.jpg')",
+       'more': "url('/dist/images/find_more_button.svg')",
+       'about': "url('/dist/images/about.jpg')",
+       'integrity': "url('/dist/images/integrity.jpg')",
+       'clients': "url('/dist/images/clients.jpg')",
+       'staff': "url('/dist/images/staff.jpg')"
       }),
       colors: {
         // Build your palette here
@@ -26,14 +31,39 @@ module.exports = {
         blue: colors.sky,
         yellow: colors.amber,
         teal: colors.teal,
-        emerald: colors.emerald
+        emerald: colors.emerald,
+        lime: colors.lime
+      },
+      fontFamily: {
+        'sans-serif':['Inter']
+      },
+      boxShadow: {
+        'btn-shadow': '0 10px 15px 10px rgba(0,0,0,0.5)',
+        'about-shadow': 'rgba(0, 0, 0, 0.35) 0px -30px 20px',
+      },
+      inset:{
+        '42': '42%',
+        '1/10': '10%',
+        '15/100': '15%'
+      },
+      maxWidth: {
+        '1/2': '50%',
+      },
+      spacing: {
+        '32.5': '32.5rem'
+      },
+      height: {
+        '352': '352px'
       }
     }
   },
   variants: {
     extend: {
       margin: ['last'],
-      border: ['hover']
+      border: ['hover'],
+      filter: ['hover'],
+      grayscale: ['hover'],
+      blur: ['hover']
     },
   },
   plugins: [],
