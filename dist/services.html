@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Our Services</title>
 </head>
 <body>
@@ -31,6 +33,78 @@
             </ul>
         </nav>
     </header>
+
+    <section  class="bg-gray-50">
+        <div class="max-w-6xl mx-auto pt-16 pb-4">
+            <h1 class="text-6xl font-thin text-center uppercase">Our Services at a glance</h1>
+            <p class="text-center mx-auto my-6 text-2xl font-thin">We take pride in the services that we provide!</p>
+        </div>
+        <div class="flex mx-auto flex-wrap max-w-5xl flex-row text-center justify-between py-12">
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/wrench.svg" alt="handshake">
+                <p class="text-xl">Engineering & Management</p>
+            </div>
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/pickaxe.svg" alt="clock">
+                <p class="text-xl">General Maintenance</p>
+            </div>
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/fabrication.svg" alt="handshake">
+                <p class="text-xl">Fabrications</p>
+            </div>
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/interiorexterior.svg" alt="clock">
+                <p class="text-xl">Interiors / Exteriors</p>
+            </div>
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/civil.svg" alt="handshake">
+                <p class="text-xl">Civil</p>
+            </div>
+            <div class="w-72 p-5 bg-white m-4 rounded-lg shadow-services transition duration-300 ease-in-out transform hover:scale-105">
+                <img class="w-24 mx-auto mb-3.5" src="images/toolbox.svg" alt="clock">
+                <p class="text-xl">Mechanical, Electrical & Plumbing</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="my-20">
+            <div class="max-w-6xl splide mx-auto">
+                <div class="splide__track">
+                    <ul class="splide__list text-center">
+                        <li class="splide__slide">
+                            <h1 class="bg-white p-4 text-6xl font-thin z-10">Civil</h1>
+                            <div class="relative">
+                                <img class="mx-auto" data-splide-lazy="/dist/images/construction.jpg" alt="construction">
+                                <p class="absolute top-0 py-56 text-left px-16 text-4xl font-thin max-w-1/2 text-white bg-black bg-opacity-30">Our civil construction services include masonry, tiling, typsum partioning and ceiling, interlocks, marble fixing and polishing, wallpaper fixing, aluminium and glass fit-outs etc.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide relative">
+                            <h1 class="bg-white p-4 text-6xl font-thin">Electrical</h1>
+                            <div class="relative">
+                                <img class="mx-auto" data-splide-lazy="/dist/images/electrician.jpg" alt="electrician">
+                                <p class="absolute top-0 right-0 py-56 text-left px-16 text-4xl font-thin max-w-1/2 text-white bg-black bg-opacity-30">Our electrical services include low voltage power, control paneling, general lighting, ELV systems, CCTV, access control, fire alarms and all general electrical maintenance & installation.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide relative">
+                            <h1 class="bg-white p-4 text-6xl font-thin">Mechanical</h1>
+                            <div class="relative">
+                                <img class="mx-auto" data-splide-lazy="/dist/images/plumber.jpg" alt="plumber">
+                                <p class="absolute top-0 py-60 text-left px-16 text-4xl font-thin max-w-1/2 text-white bg-black bg-opacity-30">Our mechanical services include air-conditioning systems maintenance & installation, duct cleaning & maintenance, plumbing, sanitary & drainage.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide relative">
+                            <h1 class="bg-white p-4 text-6xl font-thin">Interiors / Exteriors</h1>
+                            <div class="relative">
+                                <img class="mx-auto" data-splide-lazy="/dist/images/painter.jpg" alt="painter">
+                                <p class="absolute top-0 right-0 py-64 text-left px-16 text-4xl font-thin max-w-1/2 text-white bg-black bg-opacity-30">Our services also include maintenance & repair, carpentry, spray & roller painting, furniture polishing, flooring.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-emerald-800">
         <div class="flex flex-row text-white justify-between max-w-6xl py-16 mx-auto">
@@ -59,5 +133,24 @@
             <h3 class="text-center text-xs p-3">Copyright © 2021 Khair Rafiq Technical Services. All Rights Reserved </h3>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' , {
+                type: 'fade',
+                perPage: 1,
+                autoplay: true,
+                interval: 4500,
+                rewind: true,
+                pauseOnHover: false,
+                pauseOnFocus: true,
+                pagination: false,
+                lazyLoad: 'nearby',
+                heightRatio: 0.6
+            }).mount();
+        } );
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 </html>
